@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2016-02-01T15:18:04Z</date>
+    <date>2016-02-01T15:28:04Z</date>
     <screens>
         <screen>
-            <name>Zabbix server</name>
-            <hsize>2</hsize>
-            <vsize>2</vsize>
+            <name>miner</name>
+            <hsize>3</hsize>
+            <vsize>5</vsize>
             <screen_items>
                 <screen_item>
                     <resourcetype>2</resourcetype>
                     <width>500</width>
                     <height>100</height>
-                    <x>0</x>
+                    <x>1</x>
                     <y>0</y>
-                    <colspan>2</colspan>
-                    <rowspan>0</rowspan>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
                     <elements>0</elements>
                     <valign>0</valign>
                     <halign>0</halign>
@@ -24,16 +24,16 @@
                     <dynamic>0</dynamic>
                     <sort_triggers>0</sort_triggers>
                     <resource>
-                        <name>Local network</name>
+                        <name>miner</name>
                     </resource>
                     <application/>
                 </screen_item>
                 <screen_item>
                     <resourcetype>0</resourcetype>
-                    <width>400</width>
-                    <height>156</height>
+                    <width>500</width>
+                    <height>100</height>
                     <x>0</x>
-                    <y>1</y>
+                    <y>0</y>
                     <colspan>1</colspan>
                     <rowspan>1</rowspan>
                     <elements>0</elements>
@@ -45,15 +45,36 @@
                     <sort_triggers>0</sort_triggers>
                     <resource>
                         <name>CPU load</name>
-                        <host>Zabbix server</host>
+                        <host>miner</host>
                     </resource>
                     <application/>
                 </screen_item>
                 <screen_item>
                     <resourcetype>0</resourcetype>
-                    <width>400</width>
+                    <width>500</width>
                     <height>100</height>
-                    <x>1</x>
+                    <x>2</x>
+                    <y>0</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>CPU load</name>
+                        <host>miner-monitor</host>
+                    </resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>0</resourcetype>
+                    <width>500</width>
+                    <height>100</height>
+                    <x>0</x>
                     <y>1</y>
                     <colspan>1</colspan>
                     <rowspan>1</rowspan>
@@ -65,8 +86,131 @@
                     <dynamic>0</dynamic>
                     <sort_triggers>0</sort_triggers>
                     <resource>
-                        <name>CPU utilization</name>
-                        <host>Zabbix server</host>
+                        <name>Memory usage</name>
+                        <host>miner</host>
+                    </resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>0</resourcetype>
+                    <width>500</width>
+                    <height>100</height>
+                    <x>0</x>
+                    <y>2</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>MySQL operations</name>
+                        <host>miner</host>
+                    </resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>13</resourcetype>
+                    <width>500</width>
+                    <height>100</height>
+                    <x>1</x>
+                    <y>1</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>8</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>0</resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>0</resourcetype>
+                    <width>400</width>
+                    <height>100</height>
+                    <x>1</x>
+                    <y>2</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>MySQL bandwidth</name>
+                        <host>miner</host>
+                    </resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>0</resourcetype>
+                    <width>500</width>
+                    <height>100</height>
+                    <x>2</x>
+                    <y>1</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>Memory usage</name>
+                        <host>miner-monitor</host>
+                    </resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>0</resourcetype>
+                    <width>500</width>
+                    <height>100</height>
+                    <x>0</x>
+                    <y>3</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>CPU load</name>
+                        <host>miner-app</host>
+                    </resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>0</resourcetype>
+                    <width>400</width>
+                    <height>100</height>
+                    <x>1</x>
+                    <y>3</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>Memory usage</name>
+                        <host>miner-app</host>
                     </resource>
                     <application/>
                 </screen_item>
