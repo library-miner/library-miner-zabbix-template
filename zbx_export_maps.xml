@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2016-02-01T15:17:56Z</date>
+    <date>2016-03-20T14:35:19Z</date>
     <images>
         <image>
             <name>Server_(96)</name>
@@ -92,7 +92,7 @@
                     <elementtype>0</elementtype>
                     <label>{HOST.NAME}</label>
                     <label_location>-1</label_location>
-                    <x>139</x>
+                    <x>39</x>
                     <y>227</y>
                     <elementsubtype>0</elementsubtype>
                     <areatype>0</areatype>
@@ -103,6 +103,30 @@
                     <selementid>4</selementid>
                     <element>
                         <host>miner-app</host>
+                    </element>
+                    <icon_off>
+                        <name>Server_(96)</name>
+                    </icon_off>
+                    <icon_on/>
+                    <icon_disabled/>
+                    <icon_maintenance/>
+                    <urls/>
+                </selement>
+                <selement>
+                    <elementtype>0</elementtype>
+                    <label>{HOST.NAME}</label>
+                    <label_location>-1</label_location>
+                    <x>239</x>
+                    <y>227</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>5</selementid>
+                    <element>
+                        <host>miner-web-api</host>
                     </element>
                     <icon_off>
                         <name>Server_(96)</name>
@@ -136,6 +160,22 @@
                     <label/>
                     <selementid1>3</selementid1>
                     <selementid2>4</selementid2>
+                    <linktriggers/>
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label/>
+                    <selementid1>2</selementid1>
+                    <selementid2>5</selementid2>
+                    <linktriggers/>
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label/>
+                    <selementid1>3</selementid1>
+                    <selementid2>5</selementid2>
                     <linktriggers/>
                 </link>
             </links>

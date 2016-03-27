@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2016-02-01T15:28:04Z</date>
+    <date>2016-03-20T14:35:11Z</date>
     <screens>
         <screen>
             <name>miner</name>
@@ -211,6 +211,48 @@
                     <resource>
                         <name>Memory usage</name>
                         <host>miner-app</host>
+                    </resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>0</resourcetype>
+                    <width>500</width>
+                    <height>100</height>
+                    <x>2</x>
+                    <y>2</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>CPU load</name>
+                        <host>miner-web-api</host>
+                    </resource>
+                    <application/>
+                </screen_item>
+                <screen_item>
+                    <resourcetype>0</resourcetype>
+                    <width>500</width>
+                    <height>100</height>
+                    <x>2</x>
+                    <y>3</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>Memory usage</name>
+                        <host>miner-web-api</host>
                     </resource>
                     <application/>
                 </screen_item>
